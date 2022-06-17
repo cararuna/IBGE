@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import ListaPaises from './ListaPaises'
+import Titulo from './Titulo'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <section>
+      <Titulo texto="dale boca" />
+      <select>
+        <option>
+          <ListaPaises />
+        </option>
+        
+      </select>
+    </section>
+  )
 }
 
-export default App;
+export default App

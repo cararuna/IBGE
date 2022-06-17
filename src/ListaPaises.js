@@ -10,7 +10,6 @@ const ListaPaises = () => {
       .then(data => {
         setPaises(data)
         console.log(paises)
-        console.log(data)
       })
   }
 
@@ -18,13 +17,9 @@ const ListaPaises = () => {
     loadPaisesList(url)
   }, [])
 
-  return (
-    <div>
-      <ul>
-        {paises.map(pais =>(<option key={paises.nome.abreviado}>{paises.nome.abreviado}</option>))}
-      </ul>
-    </div>
-  )
+  return paises?.map(pais => (
+    <option value={1}>{pais.nome.abreviado} ({pais.id['ISO-3166-1-ALPHA-2']})</option>
+  ))
 }
 
 export default ListaPaises

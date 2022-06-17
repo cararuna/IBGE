@@ -5,12 +5,9 @@ import Titulo from './Titulo'
 const App = () => {
   return (
     <section>
-      <Titulo texto="dale boca" />
-      <select>
-        <option>
-          <ListaPaises />
-        </option>
-        
+      <Titulo texto="Países" />
+      <select id="selectList">
+        <ListaPaises />
       </select>
     </section>
   )

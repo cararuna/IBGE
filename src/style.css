@@ -1,3 +1,193 @@
-.areaTerritorial {
-  background: red;
+/* .layout {
+  display: flex;
+  align-items: center;
+} */
+
+* {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+
+
+.selectPais{
+display: flex;
+align-items: center;
+justify-content: flex-end;
+width: 18rem;
+font-weight: bold;
+font-size: 1.1rem;
+margin: 0;
+}
+
+
+
+.headerSearch{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.layoutLeft {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 10px 14px -7px #000000;
+	background:linear-gradient(to bottom, #ffffff 5%, #d4d4d4 100%);
+	border-radius:8px;
+	color:#ffffff;
+	font-family:Arial;
+	padding:10px 30px;
+	text-shadow:0px 1px 0px #c7d5da;
+  position: relative;
+  top:2px;
+}
+
+.layoutRight {
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 10px 14px -7px #5e5e5e;
+	background:linear-gradient(to bottom, #000000 5%, #00183e 100%);
+	border-radius:6px;
+	color:#ffffff;
+	font-family:Arial;
+	padding:10px 30px;
+	text-shadow:0px 1px 0px #c7d5da;
+  border-top: 1px solid #c2c2c3;
+  border-bottom: 1px solid #c2c2c3;
+  grid-column: span;
+}
+
+.infoPaises {
+  padding-top: 2rem;
+  margin-right: 2rem;
+  margin-left: 0.5rem;
+}
+
+.infoPaises div {
+  border-top: 1px solid #c2c2c3;
+  border-bottom: 1px solid #c2c2c3;
+  color: #333;
+  display: flex;
+  align-items: center;
+  width: 15rem;
+  font-weight: bold;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+#text {
+  display: none;
+}
+
+.headerUm {
+  background-color: #071D41;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+
+.headerDois {
+  background-color: #071D41;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+#language {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  width:100%;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0.2rem;
+}
+
+#language:hover {
+  display: flex;
+  background: rgba(231, 231, 231, 0.51);
+  flex-direction: column-reverse;
+  align-items: center;
+  width:100%;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0.2rem;
+}
+
+
+
+.headerPrincipal {
+  height: 4.6rem;
+  background-color: #071D41;
+  box-sizing: content-box;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.logoIbge{
+  height: 4rem;
+}
+
+.nomePaís:hover path {
+  color: red;
+}
+
+.nomePaís:hover {
+  background-color: rgba(238, 238, 238, 0.344);
+}
+
+.areaTerritorial:hover path {
+  color: brown;
+}
+
+.areaTerritorial:hover {
+  background-color: rgb(238, 238, 238);
+}
+
+.capital:hover path {
+  color: midnightblue;
+}
+
+.capital:hover {
+  background-color: rgb(229, 229, 229);
+}
+
+.linguaPrincipal:hover path {
+  color: teal;
+}
+
+.linguaPrincipal:hover {
+  background-color: rgb(226, 226, 226);
+}
+
+.Localizacao:hover path {
+  color: olive;
+}
+
+.Localizacao:hover {
+  background-color: rgb(214, 214, 214);
+}
+
+.unidadeMonetária:hover path {
+  color: green;
+}
+
+.unidadeMonetária:hover {
+  background-color: rgb(211, 211, 211);
 }

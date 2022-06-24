@@ -9,6 +9,23 @@ import {
   faDollarSign,
   faSearch
 } from '@fortawesome/free-solid-svg-icons'
+import {
+  Select,
+  Divider,
+  Container,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+  Button,
+  Stack,
+  Heading,
+  Text,
+  theme
+} from '@chakra-ui/react'
 
 const url = 'https://servicodados.ibge.gov.br/api/v1/paises'
 
@@ -50,60 +67,75 @@ const ListaPaises = () => {
   return (
     <>
       <div className="headerSearch">
-        <div className="selectPais">
-          Selecione um País{' '}
-          <FontAwesomeIcon icon={faSearch} style={{ color: 'Black' }} />
-        </div>
-        <select id="language" onChange={() => update()}>
+        <Select
+          id="language"
+          onChange={() => update()}
+          placeholder="Escolha um País"
+        >
           {paises?.map(pais => (
             <option className="paisSelecionado">
               {pais.nome?.abreviado} ({pais.id['ISO-3166-1-ALPHA-2']})
             </option>
           ))}
-        </select>
+        </Select>
       </div>
+
       <div className="layoutLeft">
         <div className="infoPaises">
           <div className="nomePaís">
-            <FontAwesomeIcon icon={faFlag} style={{ color: 'black' }} /> Nome do
-            País: {país.nome?.abreviado}
+            <FontAwesomeIcon icon={faFlag} style={{ color: 'black' }} />
+            Nome:{' '}
+            <div style={{ ['font-weight']: 'lighter' }}>
+              {país.nome?.abreviado}
+            </div>
           </div>
-          <br></br>
           <div className="areaTerritorial">
             <FontAwesomeIcon icon={faAreaChart} style={{ color: 'black' }} />{' '}
-            Area Territorial: {país.area?.total} {país.area?.unidade.símbolo}
+            Area Territorial:
+            <div style={{ ['font-weight']: 'lighter' }}>
+              {país.area?.total} {país.area?.unidade.símbolo}
+            </div>
           </div>
-          <br></br>
           <div className="capital">
             <FontAwesomeIcon
               icon={faMagnifyingGlassArrowRight}
               style={{ color: 'black' }}
             />{' '}
-            Capital: {país.governo?.capital.nome}
+            Capital:
+            <div style={{ ['font-weight']: 'lighter' }}>
+              {país.governo?.capital.nome}
+            </div>
           </div>
-          <br></br>
           <div className="linguaPrincipal">
             <FontAwesomeIcon icon={faPeopleGroup} style={{ color: 'black' }} />{' '}
-            Língua Principal: {/* {país?.linguas[0]?.nome} */}
+            Língua Principal:
+            <div style={{ ['font-weight']: 'lighter' }}>
+              {/* {país?.linguas[0]?.nome} */}
+            </div>
           </div>
-          <br></br>
           <div className="Localizacao">
             <FontAwesomeIcon
               icon={faArrowAltCircleDown}
               style={{ color: 'black' }}
             />{' '}
-            Localização: {país.localizacao?.regiao.nome}
+            Localização:
+            <div style={{ ['font-weight']: 'lighter' }}>
+              {país.localizacao?.regiao.nome}
+            </div>
           </div>
-          <br></br>
           <div className="unidadeMonetária">
             <FontAwesomeIcon icon={faDollarSign} style={{ color: 'black' }} />{' '}
-            Unidade Monetária: {/* {país['unidades-monetarias'][0]?.nome} */}
+            Unidade Monetária:
+            <div style={{ ['font-weight']: 'lighter' }}>
+              {/* {país['unidades-monetarias'][0]?.nome} */}
+            </div>
           </div>
-          <br></br>
         </div>
-
         <div className="layoutRight">
-          <div className="historico">{país?.historico}</div>
+          <Container>
+            esse container terá o mapa e um modal na tag select poe a história
+          </Container>
+          {/* <Container>{país?.historico}</Container> */}
         </div>
       </div>
     </>

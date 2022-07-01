@@ -11,6 +11,7 @@
 
 
 .selectPais{
+  
 display: flex;
 align-items: center;
 justify-content: flex-end;
@@ -23,9 +24,11 @@ margin: 0;
 
 
 .headerSearch{
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: space-between;
+  margin-top: 3rem;
+  width: 50%;
 }
 
 .layoutLeft {
@@ -46,11 +49,15 @@ margin: 0;
 	font-family:Arial;
 	padding:10px 30px;
   grid-column: span;
+  width: 60vw;
+  height: 60vh;
 }
 
 .infoPaises {
   margin-right: 2rem;
   margin-left: 0.5rem;
+  border-radius: 0.5rem;
+
 }
 
 .infoPaises div {
@@ -61,18 +68,54 @@ margin: 0;
   justify-content: space-between;
   width: 15rem;
   font-weight: bold;
-  width: 40rem;
-  border-radius: 2rem;
+  width: 18rem;
+  border-radius: 0.5rem;
   height: 3rem;
   margin: 1.2rem;
+
+  
 }
+
+.infoPaises .nomePaís:hover{
+  box-shadow: 2px 2px 0px 0px rgba(0, 64, 191, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.infoPaises .areaTerritorial:hover{
+  box-shadow: 2px 2px 0px 0px rgba(0, 64, 191, 0.5);
+
+  transition: box-shadow 0.3s ease-in-out;
+
+}
+.infoPaises .capital:hover{
+  box-shadow: 2px 2px 0px 0px rgba(0, 64, 191, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+
+}
+.infoPaises .linguaPrincipal:hover{
+  box-shadow: 2px 2px 0px 0px rgba(0, 64, 191, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+
+}
+.infoPaises .Localizacao:hover{
+  box-shadow: 2px 2px 0px 0px rgba(0, 64, 191, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+
+}
+.infoPaises .unidadeMonetária:hover{
+  box-shadow: 2px 2px 0px 0px rgba(0, 64, 191, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+
+}
+
+.infoPaises div:hover path{
+color: rgba(0, 64, 191, 0.5)}
 
 #text {
   display: none;
 }
 
 .headerUm {
-  background-color: #071D41;
   box-sizing: content-box;
   display: flex;
   flex-direction: column-reverse;
@@ -80,28 +123,38 @@ margin: 0;
   color: white;
   font-weight: bold;
   font-size: 1.5rem;
+  filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+  margin-top: 4.5rem;
+}
+
+.headerUm img{
+  max-height: 150px;
+max-width: 200px;
+width: 160px;
+height: 120px;
 }
 
 
 .headerDois {
-  background-color: #071D41;
+  
   box-sizing: content-box;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: 0.8rem;
 }
 
 #language {
   margin: 1rem;
+  width: 17.3rem;
 }
 
 
 .headerPrincipal {
   height: 4.6rem;
-  background-color: #071D41;
+  background-color: rgb(249, 249, 249);
   box-sizing: content-box;
   display: flex;
   justify-content: space-between;
@@ -109,59 +162,27 @@ margin: 0;
   align-items: center;
   color: white;
   font-weight: bold;
-  width: max;
+  margin-left:-5rem;
+  margin-right: -4.5rem;
+  box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5)
 }
 
 .logoIbge{
   height: 4rem;
 }
 
-
-.nomePaís:hover path {
-  color: rgb(0, 73, 128);
+.spacer {
+  position: absolute;
+  z-index: -5;
+  aspect-ratio: 960/300;
+  width: 122rem;
+  background-repeat: no-repeat;
+  background-position: center;
+   background-size: cover;
+   left: -5rem;
+   margin-top: 4.5rem;
 }
 
-.nomePaís:hover {
-  background-color: rgb(245, 245, 245);
+.layer {
+  background-image: url('./layer2.svg');
 }
-
-.areaTerritorial:hover path {
-  color: rgb(0, 73, 128);
-}
-
-.areaTerritorial:hover {
-  background-color: rgb(245, 245, 245);
-}
-
-.capital:hover path {
-  color: rgb(0, 73, 128);
-}
-
-.capital:hover {
-  background-color: rgb(245, 245, 245);
-}
-
-.linguaPrincipal:hover path {
-  color: rgb(0, 73, 128);
-}
-
-.linguaPrincipal:hover {
-  background-color: rgb(245, 245, 245);
-}
-
-.Localizacao:hover path {
-  color: rgb(0, 73, 128);
-}
-
-.Localizacao:hover {
-  background-color: rgb(245, 245, 245);
-}
-
-.unidadeMonetária:hover path {
-  color: rgb(0, 73, 128);
-}
-
-.unidadeMonetária:hover {
-  background-color: rgb(245, 245, 245);
-}
-

@@ -65,7 +65,7 @@ const ListaPaises = () => {
   }
 
   return (
-    <>
+    <div className="container">
       <div className="headerSearch">
         <Select
           id="language"
@@ -83,7 +83,11 @@ const ListaPaises = () => {
       <div className="layoutLeft">
         <div className="infoPaises">
           <div className="nomePaís">
-            <FontAwesomeIcon icon={faFlag} style={{ color: 'black' }} />
+            <FontAwesomeIcon
+              className="nameTag"
+              icon={faFlag}
+              style={{ color: 'black' }}
+            />
             Nome:{' '}
             <div style={{ ['font-weight']: 'lighter' }}>
               {país.nome?.abreviado}
@@ -138,7 +142,7 @@ const ListaPaises = () => {
           {/* <Container>{país?.historico}</Container> */}
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

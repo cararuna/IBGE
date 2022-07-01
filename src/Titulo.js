@@ -1,6 +1,10 @@
 import React from 'react'
 import IBGE from '../src/logoIbge.png';
 
+function refreshPage(){
+  
+}
+
 
 const Titulo = props => {
   return (

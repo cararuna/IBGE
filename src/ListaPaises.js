@@ -135,12 +135,7 @@ const ListaPaises = () => {
             </div>
           </div>
         </div>
-        <div className="layoutRight">
-          <Container>
-            esse container terá o mapa e um modal na tag select poe a história
-          </Container>
-          {/* <Container>{país?.historico}</Container> */}
-        </div>
+        
       </div>
     </div>
   )

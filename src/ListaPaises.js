@@ -29,7 +29,7 @@ import {
 
 const url = 'https://servicodados.ibge.gov.br/api/v1/paises'
 
-const ListaPaises = () => {
+const ListaPaises = (props) => {
   const [paises, setPaises] = useState([])
   const [país, setPaís] = useState('')
 
@@ -70,7 +70,7 @@ const ListaPaises = () => {
         <Select
           id="language"
           onChange={() => update()}
-          placeholder="Escolha um País"
+          placeholder='Escolha um país'
         >
           {paises?.map(pais => (
             <option className="paisSelecionado">
@@ -130,12 +130,11 @@ const ListaPaises = () => {
           <div className="unidadeMonetária">
             <FontAwesomeIcon icon={faDollarSign} style={{ color: 'black' }} />{' '}
             Unidade Monetária:
-            <div style={{ ['font-weight']: 'lighter' }}>
+            <div style={{ ['fontWeight']: 'lighter' }}>
               {/* {país['unidades-monetarias'][0]?.nome} */}
             </div>
           </div>
         </div>
-        
       </div>
     </div>
   )

@@ -1,9 +1,7 @@
 import React from 'react'
 import IBGE from '../src/logoIbge.png';
 
-function refreshPage(){
-  
-}
+
 
 
 const Titulo = props => {
@@ -11,7 +9,7 @@ const Titulo = props => {
     <div className="headerPrincipal">
       <div className="headerUm"><img src={IBGE} className="logoIbge" /></div>
       
-      <div className="headerDois"> Saiba mais no portal Cidades@</div>
+      <div className="headerDois">Saiba mais no portal Cidades@</div>
     </div>
   )
 }

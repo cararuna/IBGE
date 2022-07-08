@@ -134,6 +134,7 @@ height: 120px;
   color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: 0.8rem;
+  margin-right: 4rem;
 }
 
 #language {
@@ -159,13 +160,14 @@ height: 120px;
 
 .logoIbge{
   height: 4rem;
+  margin-left: 4rem;
 }
 
 .spacer {
   position: absolute;
   z-index: -5;
   aspect-ratio: 960/300;
-  width: 122rem;
+  width: 106.8%;
   background-repeat: no-repeat;
   background-position: center;
    background-size: cover;

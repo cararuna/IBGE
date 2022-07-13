@@ -4,7 +4,7 @@ import Titulo from './Titulo'
 import './style.css'
 import { ChakraProvider } from '@chakra-ui/react'
 import theme from './theme'
-import MapPage from './MapPage'
+/* import MapPage from './MapPage' */
 
 /* import  */
 
@@ -20,7 +20,7 @@ const App = () => {
             <input type="text" id="text"></input>
           </div>
         </section>
-        <MapPage />
+        {/* <MapPage /> */}
       </div>
     </ChakraProvider>
   )

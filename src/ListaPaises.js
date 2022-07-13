@@ -26,6 +26,7 @@ import {
   Text,
   theme
 } from '@chakra-ui/react'
+import MapPage from './MapPage'
 
 const url = 'https://servicodados.ibge.gov.br/api/v1/paises'
 
@@ -62,6 +63,7 @@ const ListaPaises = (props) => {
     var nomePais = paises[index].nome.abreviado
     console.log(nomePais)
     setPaís(paises[index])
+    console.log(país.nome.abreviado);
   }
 
   return (
@@ -135,7 +137,13 @@ const ListaPaises = (props) => {
             </div>
           </div>
         </div>
+
       </div>
+      <div className='mapaOficial'>
+
+      <MapPage texto={país?.nome?.abreviado ?? 'Busca inicial'}/>
+      </div>
+
     </div>
   )
 }

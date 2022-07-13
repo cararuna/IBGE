@@ -8,7 +8,7 @@ import {
 import './MapPage.css'
 
 /* AIzaSyB5MKmt18qhZ477bfwdTCxiRH1H438bJBU */
-const MapPage = () => {
+const MapPage = props => {
   /* function initMap(){
   var map = new google.maps.Map(document.getElementById('map'),{
     center: {lat: -33.8688, lng: 151.2195},
@@ -98,14 +98,14 @@ const MapPage = () => {
     <div className="map">
       <LoadScript
         id="script-loader"
-        googleMapsApiKey=""
+        googleMapsApiKey="AIzaSyCNd7frhz1t_AmgSs-0bNBCbi5qACL6Qis"
         libraries={['places']}
       >
         <GoogleMap
           onLoad={onMapLoad}
           mapContainerStyle={{ width: '100%', height: '100%' }}
           center={position}
-          zoom={2}
+          zoom={4}
         >
           {/* <Marker
             position={position}
@@ -120,10 +120,7 @@ const MapPage = () => {
             onLoad={onLoad}
             onPlacesChanged={onPlacesChanged}
           >
-            <input
-              className="address"
-              placeholder="Digite o endereço inicial"
-            />
+            <input className="address" placeholder={props.texto} />
           </StandaloneSearchBox>
         </GoogleMap>
       </LoadScript>
